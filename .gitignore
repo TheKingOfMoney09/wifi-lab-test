@@ -3,3 +3,4 @@ __pycache__/
 # rezultatele testelor (IP-uri si nume de calculatoare din laborator)
 data/
 *.csv
+CLAUDE.md
