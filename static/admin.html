@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Panou profesor — Test retea WiFi</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="wrap" style="max-width: 1100px;">
+  <h1>Panou profesor — Test retea WiFi &amp; Moodle</h1>
+  <h2 id="moodleLine">Moodle: —</h2>
+
+  <div class="card">
+    <div class="row" style="justify-content: space-between;">
+      <div class="row">
+        <button id="btnStart">Porneste testul</button>
+        <button id="btnStop" class="secondary">Opreste testul</button>
+        <a id="btnExport" href="#"><button class="secondary">Exporta CSV</button></a>
+      </div>
+      <div>
+        <span class="status-pill idle" id="statusPill">asteptare</span>
+        <span class="muted" id="sessionInfo"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Rezumat</h2>
+    <div class="stat-grid" id="statGrid"></div>
+  </div>
+
+  <div class="card">
+    <h2>Timp incarcare Moodle per laptop (ms)</h2>
+    <div id="chartMoodle"></div>
+  </div>
+
+  <div class="card">
+    <h2>Semnal WiFi per laptop (%)</h2>
+    <div id="chartSignal"></div>
+  </div>
+
+  <div class="card">
+    <h2>Detalii complete</h2>
+    <div style="overflow-x:auto;">
+    <table id="resultsTable">
+      <thead>
+        <tr>
+          <th>IP (nume calculator)</th>
+          <th class="num">Latenta (ms)</th>
+          <th class="num">Jitter (ms)</th>
+          <th class="num">Viteza (Mbps)</th>
+          <th class="num">Moodle (ms)</th>
+          <th>SSID</th>
+          <th class="num">Semnal (%)</th>
+          <th>Canal</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    </div>
+  </div>
+</div>
+<script src="/static/admin.js"></script>
+</body>
+</html>

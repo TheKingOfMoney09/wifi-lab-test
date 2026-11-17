@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Test retea WiFi — Laborator informatica</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="wrap">
+  <h1>Test retea WiFi &amp; Moodle</h1>
+  <h2>Laborator informatica — completeaza datele si asteapta startul profesorului</h2>
+
+  <div class="card" id="card-id">
+    <label for="clientId">Identificare laptop</label>
+    <div class="row">
+      <input type="text" id="clientId" placeholder="PC-01">
+      <button id="btnSave">Salveaza</button>
+    </div>
+    <p class="muted" style="margin-top:8px;">
+      Se completeaza automat cu numele real al calculatorului dupa ce rulezi testul de
+      semnal WiFi de mai jos (Pasul 2). Daca vrei alt nume, scrie-l si apasa Salveaza.
+    </p>
+  </div>
+
+  <div class="card">
+    <div class="row" style="justify-content: space-between;">
+      <div>
+        <strong>Stare test:</strong>
+        <span class="status-pill idle" id="statusPill">asteptare</span>
+      </div>
+      <span class="muted" id="sessionInfo"></span>
+    </div>
+  </div>
+
+  <div class="card" id="card-progress" style="display:none;">
+    <h2>Test in curs...</h2>
+    <div class="muted" id="progressText">Pregatire...</div>
+  </div>
+
+  <div class="card" id="card-results" style="display:none;">
+    <h2>Rezultatele tale</h2>
+    <div class="result-list" id="resultList"></div>
+  </div>
+
+  <div class="card">
+    <h2>Pasul 2 (o singura data pe acest laptop): puterea semnalului WiFi</h2>
+    <p class="muted">
+      Browserul nu poate citi puterea reala a semnalului WiFi din Windows, de aceea e nevoie de
+      un mic test separat. Descarca arhiva, dezarhiveaz-o (click dreapta → Extract All), apoi
+      fa dublu-click pe <code>run_wifi_test.bat</code> din interior. Scriptul citeste semnalul
+      real cu <code>netsh</code> si il trimite automat catre acest server.
+    </p>
+    <a href="/download/test-wifi.zip" download>
+      <button>Descarca testul de semnal WiFi (.zip)</button>
+    </a>
+    <p class="muted" style="margin-top:10px;">
+      Daca Windows sau browserul arata un avertisment despre fisierul descarcat, este normal
+      pentru fisiere .bat/.ps1 — alege "Pastreaza" / "Ruleaza oricum" (fisierul vine de la
+      profesor, din reteaua locala a laboratorului).
+    </p>
+  </div>
+</div>
+<script src="/static/client.js"></script>
+</body>
+</html>

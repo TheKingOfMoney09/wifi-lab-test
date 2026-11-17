@@ -1,0 +1,7 @@
+{
+  "host": "0.0.0.0",
+  "port": 8090,
+  "moodle_url": "http://192.168.6.113:8083",
+  "expected_clients": 30,
+  "payload_max_mb": 10
+}

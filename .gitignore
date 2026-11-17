@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+# rezultatele testelor (IP-uri si nume de calculatoare din laborator)
+data/
+*.csv
