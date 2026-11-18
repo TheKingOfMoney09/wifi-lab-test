@@ -201,3 +201,6 @@ acelasi laptop: `curl -o /dev/null -s -w "%{time_total}\n" http://IP:8083/`.
     cerere de incalzire, 15 esantioane si p95.
 11. Panoul afiseaza starea instalarii (server, Moodle, avertismente de
     configurare) si motivele eșecului, nu doar „—".
+12. Au fost sterse implementarile vechi `lab_server.py` si `wifi_tester.py`
+    (rulau doar pe Linux si nu erau folosite de interfata). Un singur punct de
+    intrare ramane `server.py`.
