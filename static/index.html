@@ -31,6 +31,10 @@
       </div>
       <span class="muted" id="sessionInfo"></span>
     </div>
+    <p class="muted" style="margin:10px 0 0;">
+      Lasa aceasta fila deschisa si in prim-plan. Daca browserul o muta in fundal,
+      testul poate porni cu intarziere.
+    </p>
   </div>
 
   <div class="card" id="card-progress" style="display:none;">
@@ -47,17 +51,20 @@
     <h2>Pasul 2 (o singura data pe acest laptop): puterea semnalului WiFi</h2>
     <p class="muted">
       Browserul nu poate citi puterea reala a semnalului WiFi din Windows, de aceea e nevoie de
-      un mic test separat. Descarca arhiva, dezarhiveaz-o (click dreapta → Extract All), apoi
-      fa dublu-click pe <code>run_wifi_test.bat</code> din interior. Scriptul citeste semnalul
-      real cu <code>netsh</code> si il trimite automat catre acest server.
+      un mic test separat. Descarca fisierul de mai jos si fa dublu-click pe el: citeste
+      semnalul real cu <code>netsh</code> si il trimite automat catre acest server.
     </p>
-    <a href="/download/test-wifi.zip" download>
-      <button>Descarca testul de semnal WiFi (.zip)</button>
+    <a href="/download/test-wifi.bat" download>
+      <button>Descarca testul de semnal WiFi (.bat)</button>
     </a>
     <p class="muted" style="margin-top:10px;">
       Daca Windows sau browserul arata un avertisment despre fisierul descarcat, este normal
-      pentru fisiere .bat/.ps1 — alege "Pastreaza" / "Ruleaza oricum" (fisierul vine de la
+      pentru fisiere .bat — alege "Pastreaza" / "More info" → "Run anyway" (fisierul vine de la
       profesor, din reteaua locala a laboratorului).
+    </p>
+    <p class="muted" style="margin-top:6px;">
+      Preferi varianta cu arhiva? <a href="/download/test-wifi.zip" download>test-wifi.zip</a>
+      (dezarhiveaza tot, apoi ruleaza <code>run_wifi_test.bat</code>).
     </p>
   </div>
 </div>

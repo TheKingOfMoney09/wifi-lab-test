@@ -142,6 +142,19 @@ button.secondary {
 .badge.warning { background: #fff2d6; color: #7a5200; }
 .badge.serious { background: #fde6dd; color: #8a3214; }
 .badge.critical { background: #fbe3e3; color: #8a1f1f; }
+.badge.neutral { background: #efeeea; color: var(--text-secondary); }
+
+.health-row { padding: 4px 0; font-size: 14px; }
+.health-row strong { font-weight: 600; }
+.warn-line {
+  margin-top: 8px;
+  padding: 8px 10px;
+  border-left: 3px solid var(--status-warning);
+  background: #fff8e8;
+  border-radius: 4px;
+  font-size: 13px;
+  color: #6b4a00;
+}
 
 table {
   width: 100%;
